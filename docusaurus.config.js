@@ -102,4 +102,17 @@ module.exports = {
       },
     ],
   ],
+  plugins: [
+    [
+      '@docusaurus/plugin-client-redirects',
+      {
+        redirects: [
+          {
+            to: '/docs/something/else',
+            from: '/docs/old'
+          },
+        ],
+      },
+    ],
+  ],
 };
